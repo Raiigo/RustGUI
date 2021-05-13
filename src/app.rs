@@ -26,7 +26,7 @@ impl epi::App for TestApp {
             ui.add(egui::Label::new("Salut !"));
             ui.add(egui::TextEdit::singleline(text_content));
             if ui.add(egui::Button::new("Change title")).clicked() { // On click, the title value is changed to the value text_content
-                *title = text_content.clone(); // On derefernce afin de récupérer la valeur pointé par la référence title et on l'assigne à text_content.clone(), ainsi la référence title fait touours référence à la même valeur, elle n'a pas besoin d'être marqué mut title: &mut String
+                *title = text_content.clone(); // On dereference afin de récupérer la valeur pointé par la référence title et on l'assigne à text_content.clone(), ainsi la référence title fait touours référence à la même valeur, elle n'a pas besoin d'être marqué mut title: &mut String
             }
         });
 
