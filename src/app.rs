@@ -30,9 +30,9 @@ impl epi::App for TestApp {
             }
         });
 
-        println!("{}", title);
+        // println!("{}", title);
 
-        println!("{}", text_content);
+        // println!("{}", text_content);
 
     }
 
